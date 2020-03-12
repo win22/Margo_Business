@@ -14,7 +14,7 @@
                             </div>
                         </div>
                         <div class="tg-description reveal-4">
-                            <p style="color: black !important; font-size: 20px">
+                            <p style="color: black !important; font-size: 18px">
                                 Un Coach pour vous orienter vers la réussite ! Apprenez comment définir vos priorités,
                                 créer un plan d’action et augmenter vos résultats. Une opportunité unique de développer votre vie,
                                 vos relations, vos affaires, votre réseau, votre performance et votre équilibre. Nous proposons différentes
@@ -55,7 +55,7 @@
                         <span class="tg-themefeatureicon"><i class="icon-smiling-face"></i></span>
                         <h3 style="color: #373737; font-family: 'Manjari Bold'">DEVENEZ UN CHAMPION ET UN LEADER QUE LES AUTRES ENVIERONT</h3>
                         <div class="tg-description">
-                            <p style="color: #373737">
+                            <p style="color: #2e2e2e">
                                 La pire erreur que font la majorité des gens et des entrepreneurs, est de s’isoler. Pensez-vous que vous feriez plus de
                                 pompes si vous aviez un coach sportif à vos côtés ? C’est la même chose pour le coaching de
                                 vie ou de business. Nous avons tous besoin d’un vrai pro qui nous permette d’éviter de tomber dans les pièges inutiles, stressant et coûteux.
@@ -66,7 +66,7 @@
                         <span class="tg-themefeatureicon"><i class="icon-smiling-face"></i></span>
                         <h3 style="color: #373737; font-family: 'Manjari Bold'">UN RETOUR SUR INVESTISSEMENT DÉMULTIPLIÉ</h3>
                         <div class="tg-description">
-                            <p style="color: #373737;">
+                            <p style="color:  #2e2e2e;">
                                 Les études démontrent que faire appel à un Coach Business vous donne un Retour Sur Investissement (ROI) moyen de X7 ! Que ce soit pour un
                                 Life ou Business Coaching, MargoBusiness vous permettra de créer un
                                 ROI hors norme. Il y a juste une condition : que vous mettiez en application les conseils que vous recevrez et les décisions que vous prendrez.
@@ -77,7 +77,7 @@
                         <span class="tg-themefeatureicon"><i class="icon-smiling-face"></i></span>
                         <h3 style="color: #373737; font-family: 'Manjari Bold'">DÉPASSEZ-VOUS ET ACCÉLÉREZ VOTRE RÉUSSITE COMME JAMAIS</h3>
                         <div class="tg-description">
-                            <p style="color: #373737;">
+                            <p style="color:  #2e2e2e;">
                                 Tous les plus grands champions ont des coachs ! et c’est la raison pour laquelle ils sont les meilleurs. Que ce soit dans le domaine
                                 du sport, des affaires ou au niveau personnel, nous ne pouvons tout simplement pas exploiter notre plein potentiel juste par nous-même.
                             </p>
@@ -87,7 +87,7 @@
                         <span class="tg-themefeatureicon"><i class="icon-smiling-face"></i></span>
                         <h3 style="color: #373737; font-family: 'Manjari Bold'">ENTREPRISES</h3>
                         <div class="tg-description">
-                            <p style="color: #373737;">
+                            <p style="color:  #2e2e2e;">
                                 Un véritable investissement sur les plans humain, stratégique et financier pour améliorer la performance de vos équipes.</p>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
                         <span class="tg-themefeatureicon"><i class="icon-smiling-face"></i></span>
                         <h3 style="color: #373737; font-family: 'Manjari Bold'">COACHING PERSONNALISÉ</h3>
                         <div class="tg-description">
-                            <p style="color: #373737;">
+                            <p style="color:  #2e2e2e;">
                                 Un véritable investissement sur les plans humain, stratégique et financier pour améliorer votre performance. </p>
                         </div>
                     </div>

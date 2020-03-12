@@ -14,9 +14,9 @@
                             </div>
                         </div>
                         <div class="tg-description reveal-4">
-                            <p style="color: black; font-size: 20px">
+                            <p style="color: black; font-size: 18px">
                                 Vous avez une idée de projet? des affaires à développer? Ou voulez tout simplement vous lancez dans
-                                l’entrepreneuriat? Nous avons une solution pour vous ! Avec notre équipe d’expert en Affaire , <strong>MARGO BUSINESS</strong>
+                                l’entrepreneuriat? Nous avons une solution pour vous ! Avec notre équipe d’expert en Affaire , <strong style="color: #084f68">MARGO BUSINESS</strong>
                                 vous accompagne, de l’idée jusqu’à la réalisation de votre projet.
                             </p>
                             <p style="color: black; font-size: 20px">
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="tg-description reveal-4">
-                    <p>
+                    <p style="color: #2e2e2e">
                         Vous avez une idée de projet? des affaires à développer? Ou voulez tout simplement vous lancez dans
                         l’entrepreneuriat? Nous avons une solution
                         pour vous ! Avec notre équipe d’expert en Affaire , MARGO BUSINESS vous accompagne, de l’idée jusqu’à
@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="tg-description reveal-4">
-                <p>
+                <p style="color: #2e2e2e">
                     une maitrise des sujets de gestion et
                     d’optimisation de votre métier ou des fonctions dites de support comme : RH, systèmes d’informations, la finance,
                     les achats, la qualité, l’audit, les risques, contrôle interne. nous vous garantissons la détermination d’un meilleur mode de
@@ -94,7 +94,7 @@
                     </div>
                 </div>
                 <div class="tg-description reveal-4">
-                    <p>
+                    <p style="color: #2e2e2e">
                         vise à fournir aux dirigeants d’entreprises des conseils spécialisés, liées à des recommandations sur les volets managériales,
                         organisationnels, performances. marketing, à la communication, aux ventes, aux relations,
                         à la gestion financière, la fiscalité, la comptabilité la mise en conformité avec les règlements, toutes les  opérations de l’entreprise,
@@ -125,7 +125,7 @@
                     </div>
                 </div>
                 <div class="tg-description reveal-4">
-                    <p>
+                    <p style="color: #2e2e2e">
                         Nous vous proposons de  mettre en place un processus systématique de suivi de recueil, d’analyse et d’interprétation de vos données, visant à déterminer en continu les progrès
                         de votre entreprise et l’évaluation de vos activité,
                         projet ou programme, de vos stratégie. L’évaluation portera sur les accomplissements escomptés et réalisés et examiner la chaine des résultats (intrants, extrants, effets et impacts)

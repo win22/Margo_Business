@@ -72,11 +72,12 @@
                                         <a href="{{ route('blg') }}">Blog</a>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a>Catalogue</a>
+                                        <a>Services</a>
                                         <ul class="sub-menu">
                                             <li><a href="{{ route('frm') }}">Formation</a></li>
                                             <li><a href="{{ route('coach') }}">Coaching</a></li>
                                             <li><a href="{{ route('consul') }}">Consulting</a></li>
+                                            <li><a href="{{ route('even') }}">Evenementiel</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
@@ -104,7 +105,7 @@
                 Home Slider Start
         *************************************-->
         <div id="tg-homeslidervfour" class="tg-homeslider owl-carousel tg-homeslidervfour reveal">
-            <figure class="item" data-vide-bg="{{ asset('site/images/slider/sl2.jpg') }}" data-vide-options="position: 0% 50%">
+            <figure class="item" data-vide-bg="{{ asset('site/images/allhome/dia.jpeg') }}" data-vide-options="position: 0% 50%">
                 <figcaption>
                     <div class="container">
                         <div class="row reveal">
@@ -320,7 +321,7 @@
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                 <div class="tg-imgshortcode tg-imgshadow ">
                                     <figure  style="width: 530px"><img  class="reveal-3" style="width: 580px !important;" src="{{ asset('site/images/allhome/ceomargo.jpeg') }}" alt="image description"></figure>
-                                </div>
+                            </div>
                                 <div style="background-color: #222428; padding-top: 20px!important; padding-bottom: 20px!important;" class="tg-themefeatures tg-themefeaturesvfive">
                                     <div class="tg-themefeature reveal-3">
                                         <h3  style="color: yellow">Pensée du jour</h3>
