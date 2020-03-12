@@ -36,7 +36,7 @@
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="javascript:void(0);(0);">A propos</a>
+                                    <a href="{{ route('ab') }}">A propos</a>
                                 </li>
                                 <li class="menu-item-has-children">
                                     <a href="javascript:void(0);(0);">Nous contacter</a>

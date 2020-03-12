@@ -81,7 +81,7 @@
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);(0);">A propos</a>
+                                        <a href="{{ route('ab') }}">A propos</a>
                                     </li>
                                     <li class="menu-item-has-children">
                                         <a href="javascript:void(0);(0);">Nous contacter</a>
@@ -105,7 +105,7 @@
                 Home Slider Start
         *************************************-->
         <div id="tg-homeslidervfour" class="tg-homeslider owl-carousel tg-homeslidervfour reveal">
-            <figure class="item" data-vide-bg="{{ asset('site/images/allhome/dia.jpeg') }}" data-vide-options="position: 0% 50%">
+            <figure class="item" data-vide-bg="{{ asset('site/images/slider/sl2.jpeg') }}" data-vide-options="position: 0% 50%">
                 <figcaption>
                     <div class="container">
                         <div class="row reveal">

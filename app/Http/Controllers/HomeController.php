@@ -35,4 +35,9 @@ class HomeController extends Controller
     {
         return view('site.catalogue.evenementiel');
     }
+
+    public function abouts()
+    {
+        return view('site.about');
+    }
 }
