@@ -18,3 +18,5 @@ Route::get('/coaching', 'HomeController@coachings')->name('coach');
 Route::get('/consulting', 'HomeController@consultings')->name('consul');
 Route::get('/evenementiel', 'HomeController@evenementiels')->name('even');
 Route::get('/about', 'HomeController@abouts')->name('ab');
+Route::get('/contact', 'HomeController@contacts')->name('cont');
+Route::get('/login', 'HomeController@logins')->name('log');

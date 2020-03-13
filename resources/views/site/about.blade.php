@@ -67,10 +67,10 @@
                                     <a href="{{ route('ab') }}">A propos</a>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="javascript:void(0);(0);">Nous contacter</a>
+                                    <a href="{{ route('cont') }}">Nous contacter</a>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="javascript:void(0);(0);">Se connecter</a>
+                                    <a href="{{ route('log') }}">Se connecter</a>
                                 </li>
                             </ul>
                         </div>
@@ -80,9 +80,9 @@
         </div>
     </div>
 </header>
-<div id="tg-innerbanner" class="tg-innerbanner">
-    <figure  style="background-image: url({{ asset('site/images/allhome/DSC_2380.jpeg') }}) !important; background-size: cover; background-repeat: no-repeat " data-vide-options="position: 0% 50%">
-        <figcaption>
+<div id="tg-innerbanner" style="height: 660px" class="tg-innerbanner">
+    <figure  style="height: 660px; background-image: url({{ asset('site/images/allhome/DSC_2380.jpeg') }}) !important; background-size: cover; background-repeat: no-repeat " data-vide-options="position: 0% 50%">
+        <figcaption style="height: 660px;">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-10 col-md-7 col-lg-6 pull-right">
@@ -99,12 +99,107 @@
         </figcaption>
     </figure>
 </div>
+<section style="padding-bottom: 0px  !important;background-color: #ffb400 !important; background-image: url( {{ asset('site/images/allhome/electrician_19.png') }} ); " class="tg-sectionspace tg-paddingbottomzero tg-haslayout reveal">
+    <div class="container">
+        <div style="padding-bottom: 0px !important;" class="row">
+            <div class="tg-community">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8 ">
+                    <div class="tg-textshortcode">
+                        <div class="tg-sectionhead tg-sectionheadvtwo">
+                            <div class="tg-sectiontitle reveal-3">
+                                <h2  style="color: black; font-family: 'lora'">
+                                    Ce que nous sommes
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="tg-description reveal-4">
+                            <p style="color: black">
+                                Margo Business vous propose une opportunité unique de créer un lien au tour de vous. Ceci sera un pilier pour l’image, l’accroissement la notoriété et la promotion de vos produits et services Une méthode efficace pour prendre votre entreprise en main
+                                et éclater vos blocages intérieurs, une véritables clés et stratégies pour améliorer vos finances et vos relations.
+                                Il s’agit d’un plan concret pour créer la réussite que vous désirez. De nouvelles décisions pour passer un cap supérieur dans votre vie. Un groupe de nouveaux amis qui vous supporteront dans vos projets
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-<div class="container-fluid">
-    <div class="row">
-        @yield('content')
+            </div>
+        </div>
+        <div class="row">
+            <div class="tg-community">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8  pull-right">
+                    <div class="tg-textshortcode">
+                        <div class="tg-sectionhead tg-sectionheadvtwo">
+                            <div class="tg-sectiontitle reveal-3">
+                                <h2  style="color: black; font-family: 'lora'">
+                                    Pourquoi nous faire confiance
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="tg-description reveal-4">
+                            <p style="color: black">
+                                Une journée de séminaire pour vous intégrer les secrets de ceux qui réussissent et enfin
+                                lancer votre propre business en partant de zéro !
+                                <span>Ce séminaire vous permettra de :</span>
+                            </p>
+                            <div class="row">
+                                <div class="col-md-6" style="font-size: 15px; color: black">
+                                    <ul>
+                                        <li><i style="color: #084f68!important" class="fa fa-check-circle"></i> Identifier ce que vous voulez vraiment</li>
+                                        <li><i style="color: #084f68!important" class="fa fa-check-circle"></i> Clarifiez vos objectifs</li>
+                                        <li><i style="color: #084f68!important" class="fa fa-check-circle"></i> Définir vos priorités sur un an et plus</li>
+                                        <li><i style="color: #084f68!important" class="fa fa-check-circle"></i> Trouver votre motivation et la rendre durable</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6" style="font-size: 15px; color: black">
+                                    <ul>
+                                        <li><i style="color: #084f68!important" class="fa fa-check-circle"></i> Identifier ce que vous voulez vraiment</li>
+                                        <li><i style="color: #084f68!important" class="fa fa-check-circle"></i>
+                                            Apprendre la methode P.C.S
+                                        </li>
+                                        <li><i style="color: #084f68!important" class="fa fa-check-circle"></i> Intensifier cette energie et creez votre feu interieur</li>
+                                        <li><i style="color: #084f68!important" class="fa fa-check-circle"></i> Apprendre comment la retrouver à chaque instant quand
+                                            vous la perdez</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
-</div>
+</section>
+<section class="tg-sectionspace tg-haslayout">
+    <div class="container">
+        <div class="row">
+            <div class="tg-aboutus tg-aboutusvtwo">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <h2><span>Margo Business</span>We're a creative agency. Ask us about branding, design and more about ourselves!</h2>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <ul class="tg-list tg-liststyledash">
+                        <li>consectetuer adipiscing elit.</li>
+                        <li>sit amet, consectetur adipisicing</li>
+                        <li>incididunt ut labore</li>
+                        <li>Ut enim ad minim veniam,</li>
+                        <li>consectetuer adipiscing elit.</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <ul class="tg-list tg-liststyledash">
+                        <li>consectetuer adipiscing elit.</li>
+                        <li>sit amet, consectetur adipisicing</li>
+                        <li>incididunt ut labore</li>
+                        <li>Ut enim ad minim veniam,</li>
+                        <li>consectetuer adipiscing elit.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 @include('site.footer')

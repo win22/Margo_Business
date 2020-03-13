@@ -40,4 +40,14 @@ class HomeController extends Controller
     {
         return view('site.about');
     }
+
+    public function contacts()
+    {
+        return view('site.contact');
+    }
+
+    public function logins()
+    {
+        return view('site.login');
+    }
 }

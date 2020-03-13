@@ -84,10 +84,10 @@
                                         <a href="{{ route('ab') }}">A propos</a>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);(0);">Nous contacter</a>
+                                        <a href="{{ route('cont') }}">Nous contacter</a>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);(0);">Se connecter</a>
+                                        <a href="{{ route('log') }}">Se connecter</a>
                                     </li>
                                 </ul>
                             </div>
@@ -277,28 +277,14 @@
                 <div class="tg-themefeatures tg-themefeaturesvthree">
                     <div class="tg-themefeature">
                         <span class="tg-themefeatureicon"><i class="icon-lightbulb"></i></span>
-                        <h3>Designing Department</h3>
+                        <h3>Evenementiel</h3>
                         <div class="tg-description">
                             <p>Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos consequat.</p>
                         </div>
                     </div>
                     <div class="tg-themefeature">
-                        <span class="tg-themefeatureicon"><i class="icon-lightbulb"></i></span>
-                        <h3>Designing Department</h3>
-                        <div class="tg-description">
-                            <p>Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos consequat.</p>
-                        </div>
-                    </div>
-                    <div class="tg-themefeature">
-                        <span class="tg-themefeatureicon"><i class="icon-lightbulb"></i></span>
-                        <h3>Designing Department</h3>
-                        <div class="tg-description">
-                            <p>Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos consequat.</p>
-                        </div>
-                    </div>
-                    <div class="tg-themefeature">
-                        <span class="tg-themefeatureicon"><i class="icon-lightbulb"></i></span>
-                        <h3>Designing Department</h3>
+                        <span class="tg-themefeatureicon"><i class="icon-leaf"></i></span>
+                        <h3>Séminaire</h3>
                         <div class="tg-description">
                             <p>Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos consequat.</p>
                         </div>
@@ -393,7 +379,7 @@
                             <article class="tg-post">
                                 <figure>
                                     <span class="tg-postcategory">work</span>
-                                    <img src="{{ asset('site/images/blog/img-43.jpg') }}" alt="image description">
+                                    <img style="height: 368px" src="{{ asset('site/images/blog/2.jpg') }}" alt="image description">
                                     <figcaption>
                                         <div class="tg-postcontent">
                                             <div class="tg-posttitle">
@@ -404,10 +390,9 @@
                                             </div>
                                             <ul class="tg-postmetadata">
                                                 <li>
-                                                    <figure><a href="javascript:void(0);(0);"><img src="{{ asset('site/images/allhome/1/img-09.jpg') }}" alt="image description"></a></figure>
-                                                    <span>By <a href="javascript:void(0);(0);">Haley</a></span>
+                                                     <span>By <a href="javascript:void(0);(0);">Ibrahima DIALLO</a></span>
                                                 </li>
-                                                <li><time datetime="2017-07-07">25 Sep 2016</time></li>
+                                                <li><time datetime="2017-07-07">1 Mars 2020</time></li>
                                             </ul>
                                         </div>
                                     </figcaption>
@@ -416,7 +401,7 @@
                             <article class="tg-post">
                                 <figure>
                                     <span class="tg-postcategory">Videos</span>
-                                    <img src="{{ asset('site/images/blog/img-43.jpg') }}" alt="image description">
+                                    <img style="height: 368px" src="{{ asset('site/images/blog/2.jpeg') }}" alt="image description">
                                     <figcaption>
                                         <div class="tg-postcontent">
                                             <div class="tg-posttitle">
@@ -427,10 +412,9 @@
                                             </div>
                                             <ul class="tg-postmetadata">
                                                 <li>
-                                                    <figure><a href="javascript:void(0);(0);"><img src="{{ asset('site/images/allhome/1/img-09.jpg') }}" alt="image description"></a></figure>
-                                                    <span>By <a href="javascript:void(0);(0);">Haley</a></span>
+                                                     <span>By <a href="javascript:void(0);(0);">Ibrahima DIALLO</a></span>
                                                 </li>
-                                                <li><time datetime="2017-07-07">25 Sep 2016</time></li>
+                                                <li><time datetime="2017-07-07">2 Mars 2020</time></li>
                                             </ul>
                                         </div>
                                     </figcaption>
@@ -440,7 +424,7 @@
                             <article class="tg-post">
                                 <figure>
                                     <span class="tg-postcategory">work</span>
-                                    <img src="{{ asset('site/images/blog/img-43.jpg') }}" alt="image description">
+                                    <img  style="height: 368px" src="{{ asset('site/images/blog/4.jpg') }}" alt="image description">
                                     <figcaption>
                                         <div class="tg-postcontent">
                                             <div class="tg-posttitle">
@@ -451,10 +435,9 @@
                                             </div>
                                             <ul class="tg-postmetadata">
                                                 <li>
-                                                    <figure><a href="javascript:void(0);(0);"><img src="{{ asset('site/images/allhome/1/img-09.jpg') }}" alt="image description"></a></figure>
-                                                    <span>By <a href="javascript:void(0);(0);">Haley</a></span>
+                                                     <span>By <a href="javascript:void(0);(0);">Ibrahima DIALLO</a></span>
                                                 </li>
-                                                <li><time datetime="2017-07-07">25 Sep 2016</time></li>
+                                                <li><time datetime="2017-07-07">4 Mars 2020</time></li>
                                             </ul>
                                         </div>
                                     </figcaption>
@@ -463,7 +446,7 @@
                             <article class="tg-post">
                                 <figure>
                                     <span class="tg-postcategory">Videos</span>
-                                    <img src="{{ asset('site/images/blog/img-43.jpg') }}" alt="image description">
+                                    <img style="height: 368px" src="{{ asset('site/images/blog/1.jpeg') }}" alt="image description">
                                     <figcaption>
                                         <div class="tg-postcontent">
                                             <div class="tg-posttitle">
@@ -474,10 +457,9 @@
                                             </div>
                                             <ul class="tg-postmetadata">
                                                 <li>
-                                                    <figure><a href="javascript:void(0);(0);"><img src="{{ asset('site/images/allhome/1/img-09.jpg') }}" alt="image description"></a></figure>
-                                                    <span>By <a href="javascript:void(0);(0);">Haley</a></span>
+                                                      <span>By <a href="javascript:void(0);(0);">Ibrahima DIALLO</a></span>
                                                 </li>
-                                                <li><time datetime="2017-07-07">25 Sep 2016</time></li>
+                                                <li><time datetime="2017-07-07">8 Mars 2020</time></li>
                                             </ul>
                                         </div>
                                     </figcaption>

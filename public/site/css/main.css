@@ -4483,20 +4483,19 @@ li.menu-item-has-children:hover > .mega-menu{
 	text-align: center;
 }
 .tg-themefeaturesvfour .tg-boxone{
-	background: url(../images/allhome/4/img-04.jpg) no-repeat center center;
 	background-size:100% 100%;
 }
 .tg-themefeaturesvfour .tg-boxtwo{
-	background: url(../images/allhome/4/img-05.jpg) no-repeat center center;
+
 	background-size:100% 100%;
 }
 .tg-themefeaturesvfour .tg-boxthree{
-	background: url(../images/allhome/4/img-06.jpg) no-repeat center center;
+
 	background-size:100% 100%;
 }
 .tg-themefeaturesvfour .tg-boxone .tg-themefeature{background: rgba(25,24,40,0.75);}
 .tg-themefeaturesvfour .tg-boxtwo .tg-themefeature{background: rgba(59,85,230,0.75);}
-.tg-themefeaturesvfour .tg-boxthree .tg-themefeature{background: rgba(234,32,92,0.75);}
+.tg-themefeaturesvfour .tg-boxthree .tg-themefeature{background: rgba(238, 255, 0, 0.75);}
 .tg-themefeaturesvfour .tg-themefeature{padding: 80px 30px;}
 .tg-themefeaturesvfour .tg-themefeature .tg-description{
 	color: #fff;

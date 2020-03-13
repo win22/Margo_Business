@@ -9,7 +9,8 @@
                         </div>
                         <div class="tg-widgetcontent">
                             <div class="tg-description">
-                                <p>Sign up with your email addres to get updates fresh updates.</p>
+                                <p>Inscrivez-vous à nos communications pour recevoir nos meilleures offres et nos conseils!
+                                    </p>
                             </div>
                             <form class="tg-formtheme tg-formsubscribe">
                                 <fieldset>
@@ -17,7 +18,7 @@
                                     <button style="background-color: #e9d500" type="submit"><i class="icon-envelope"></i></button>
                                 </fieldset>
                             </form>
-                            <h4>We are Social </h4>
+                            <h4>Suivez nous aussi sur: </h4>
                             <ul class="tg-socialicons">
                                 <li class="tg-facebook"><a href="javascript:void(0);(0);"><i class="icon-facebook-1"></i></a></li>
                                 <li class="tg-twitter"><a href="javascript:void(0);(0);"><i class="icon-twitter-1"></i></a></li>
@@ -35,10 +36,10 @@
                         </div>
                         <div class="tg-widgetcontent">
                             <ul>
-                                <li><a href="javascript:void(0);(0);">About us</a></li>
-                                <li><a href="javascript:void(0);(0);">Formation</a></li>
-                                <li><a href="javascript:void(0);(0);">Coaching</a></li>
-                                <li><a href="javascript:void(0);(0);">Contact</a></li>
+                                <li><a href="{{ route('ab') }}">About us</a></li>
+                                <li><a href="{{ route('frm') }}">Formation</a></li>
+                                <li><a href="{{ route('coach') }}">Coaching</a></li>
+                                <li><a href="{{ route('cont') }}">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -71,9 +72,12 @@
                         </div>
                         <h4>Entrer En Contact</h4>
                         <ul class="tg-contactinfo">
-                            <li>Phone: (612) 9231 5400</li>
-                            <li>Email: <a href="javascript:void(0);(0);">hello@vation.com</a></li>
-                            <li><address>Address: No.200 Josecph, San Francisco CA Canada 10020</address></li>
+                            <li>Phone:
+                                +221 33 820 99 79​ |
+                                +221 77 144 10 47
+                            </li>
+                            <li>Email: <a href="javascript:void(0);(0);">contact@margobusiness.com</a></li>
+                            <li><address> 205, Ouest-Foire (en Face Cices) Dakar, Sénegal​</address></li>
                         </ul>
                     </div>
                 </div>
@@ -87,7 +91,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="tg-footerbar">
                     <span class="tg-copyright">Copyright &copy; 2020 All right reserved.</span>
-                    <span class="tg-by">Made with <i class="icon-heart"></i> by <a href="javascript:void(0);(0);">Nataal Agency</a></span>
+                    <span class="tg-by">Made with <i class="icon-heart"></i> by  <a style="color: red" target="_blank" href="https://www.nataalagency.com">Nataal Agency</a></span>
                 </div>
             </div>
         </div>

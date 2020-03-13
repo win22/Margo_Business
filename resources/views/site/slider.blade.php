@@ -39,10 +39,10 @@
                                     <a href="{{ route('ab') }}">A propos</a>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="javascript:void(0);(0);">Nous contacter</a>
+                                    <a href="{{ route('cont') }}">Nous contacter</a>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="javascript:void(0);(0);">Se connecter</a>
+                                    <a href="{{ route('log') }}">Se connecter</a>
                                 </li>
                             </ul>
                         </div>
