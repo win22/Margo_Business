@@ -104,22 +104,17 @@
         <!--************************************
                 Home Slider Start
         *************************************-->
-        <div id="tg-homeslidervfour" class="tg-homeslider owl-carousel tg-homeslidervfour reveal">
-            <figure class="item" data-vide-bg="{{ asset('site/images/slider/sl2.jpeg') }}" data-vide-options="position: 0% 50%">
+        <div id="tg-homeslidervfour" class="tg-homeslider owl-carousel ">
+            <figure class="item" data-vide-bg="{{ asset('site/images/slider/dia.jpg') }}" >
                 <figcaption>
                     <div class="container">
                         <div class="row reveal">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <div class="tg-slidercontent">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 reveal-2">
                                     <h1
-                                    style=" text-shadow: 2px 0px 3px rgba(8,79,104,0.67)"
-                                    ><span>Margo Business</span></h1>
-                                    <div class="tg-description">
-                                        <h2 style=" font-family: 'Lora'; color: white ;text-shadow: 2px 0px 3px rgba(8,79,104,0.67)">creez une vie selon vos propres termes, car vous étes les leaders de demain!</h2>
-                                    </div>
-                                    <div class="tg-btns">
-                                        <a class="tg-btn" href=""><span>Démarrer</span></a>
-                                    </div>
+                                        style="text-shadow: 2px 0px 3px rgba(8,79,104,0.67)"
+                                    ><span style="color: white; font-family: 'Lora'; background-image: linear-gradient(135deg,#e09900 45%,rgba(0,0,0,0) 30%) !important;"> Margo Business</span></h1>
+                                <div class="tg-description">
+                                    <h1 style="padding-top: 15px ;font-size: 30px ; font-family: 'Lora'; color: white ;text-shadow: 2px 0px 3px rgba(8,79,104,0.67)">creez une vie selon vos propres termes</h1>
                                 </div>
                             </div>
                         </div>
@@ -130,7 +125,7 @@
                 <figcaption>
                     <div class="container">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 reveal-2">
                                 <div class="tg-slidercontent">
                                     <h1>We’re Focused<span>on Digital Products</span></h1>
                                     <div class="tg-description">
@@ -149,7 +144,7 @@
                 <figcaption>
                     <div class="container">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 reveal-2">
                                 <div class="tg-slidercontent">
                                     <h1>We’re Focused<span>on Digital Products</span></h1>
                                     <div class="tg-description">
@@ -374,6 +369,10 @@
     </section>
             <div class="container-fluid">
                 <div class="row">
+                    <div class="tg-sectiontitle">
+                        <h2 style="font-family:'Manjari Regular';color: #2a2a2a; padding-left: 40%; padding-top: 30px">Actualités</h2>
+                        <p style="padding-left: 20%;">Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page</p>
+                    </div>
                     <div class="tg-blogpost tg-blogpostvtwo tg-blogpostvfive tg-bglight">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <article class="tg-post">

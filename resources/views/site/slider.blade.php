@@ -65,7 +65,7 @@
                             ><span style="font-family: 'Lora'; background-image: linear-gradient(135deg,#e09900 45%,rgba(0,0,0,0) 30%) !important;"> Margo Business</span></h1>
                         </div>
                         <div class="tg-description">
-                            <h1 style="padding-top: 15px ;font-size: 30px ; font-family: 'Lora'; color: white ;text-shadow: 2px 0px 3px rgba(8,79,104,0.67)">creez une vie selon vos propres termes, car vous étes les leaders de demain!</h1>
+                            <h1 style="padding-top: 15px ;font-size: 30px ; font-family: 'Lora'; color: white ;text-shadow: 2px 0px 3px rgba(8,79,104,0.67)">creez une vie selon vos propres termes</h1>
                         </div>
                     </div>
                 </div>
