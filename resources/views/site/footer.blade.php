@@ -52,11 +52,11 @@
                         <div class="tg-widgetcontent">
                             <ul>
                                 <li>
-                                    <p><a href="javascript:void(0);(0);">@WordPress</a> Please kindly use Support Forum <a href="javascript:void(0);(0);">website.co.uk</a></p>
+                                    <p><a href="javascript:void(0);(0);">@Nataal_Agency</a> <a href="javascript:void(0);(0);">website.co.uk</a></p>
                                     <time datetime="2017-01-01">3 days ago</time>
                                 </li>
                                 <li>
-                                    <p>Don't forget to check our <a href="javascript:void(0);(0);">@WordPress</a> Please kindly use Support Forum <a href="javascript:void(0);(0);">website.co.uk</a></p>
+                                    <p>Don't forget to check our <a href="javascript:void(0);(0);">@Nataal_Agency</a> Please kindly use Support Forum <a href="javascript:void(0);(0);">website.co.uk</a></p>
                                     <time datetime="2017-01-01">3 days ago</time>
                                 </li>
                             </ul>

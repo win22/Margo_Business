@@ -37,7 +37,7 @@
                             <img src="{{ asset('site/images/margo1.png') }}" alt="company logo here">
                         </a>
                     </strong>
-                    <nav id="tg-nav" class="tg-nav reveal">
+                    <nav id="tg-nav" class="tg-nav">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tg-navigation" aria-expanded="false">
                                 <span class="sr-only">Toggle navigation</span>
@@ -49,7 +49,7 @@
                         <div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
                             <ul style="font-family: 'Manjari Regular' !important;">
                                 <li class="menu-item-has-children">
-                                    <a href="/">Acceuil</a>
+                                    <a href="/" class="{{ request()->is('/')? 'active' : ''  }}">Acceuil</a>
                                 </li>
                                 <li class="menu-item-has-children">
                                     <a href="{{ route('blg') }}">Blog</a>
@@ -57,7 +57,7 @@
                                 <li class="menu-item-has-children">
                                     <a>Services</a>
                                     <ul class="sub-menu">
-                                        <li class="{{ request()->is('/formation')? 'current-menu-item' : ''  }}"><a href="{{ route('frm') }}" >Formation</a></li>
+                                        <li><a href="{{ route('frm') }}">Formation</a></li>
                                         <li><a href="{{ route('coach') }}">Coaching</a></li>
                                         <li><a href="{{ route('consul') }}">Consulting</a></li>
                                         <li><a href="{{ route('even') }}">Evenementiel</a></li>
@@ -67,7 +67,7 @@
                                     <a href="{{ route('ab') }}">A propos</a>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="{{ route('cont') }}">Nous contacter</a>
+                                    <a href="{{ route('cont') }}">Contact</a>
                                 </li>
                                 <li class="menu-item-has-children">
                                     <a href="{{ route('log') }}">Se connecter</a>
@@ -80,60 +80,7 @@
         </div>
     </div>
 </header>
-<header id="tg-header" class="tg-header tg-fixedheader tg-headervtwo reveal">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="tg-headercontent">
-                    <strong class="tg-logo">
-                        <a href="/">
-                            <img src="{{ asset('site/images/margo1.png') }}" alt="company logo here">
-                            <img src="{{ asset('site/images/margo1.png') }}" alt="company logo here">
-                        </a>
-                    </strong>
-                    <nav id="tg-nav" class="tg-nav reveal">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tg-navigation" aria-expanded="false">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
-                            <ul style="font-family: 'Manjari Regular' !important;">
-                                <li class="menu-item-has-children">
-                                    <a href="/">Acceuil</a>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="{{ route('blg') }}">Blog</a>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a>Services</a>
-                                    <ul class="sub-menu">
-                                        <li class="{{ request()->is('/formation')? 'current-menu-item' : ''  }}"><a href="{{ route('frm') }}" >Formation</a></li>
-                                        <li><a href="{{ route('coach') }}">Coaching</a></li>
-                                        <li><a href="{{ route('consul') }}">Consulting</a></li>
-                                        <li><a href="{{ route('even') }}">Evenementiel</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="{{ route('ab') }}">A propos</a>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="{{ route('cont') }}">Nous contacter</a>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="{{ route('log') }}">Se connecter</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+
 <div id="tg-innerbanner" style="height: 780px" class="tg-innerbanner">
     <figure  style="height: 780px; background-image: url({{ asset('site/images/allhome/DSC_2380.jpeg') }}) !important; background-size: cover; background-repeat: no-repeat " data-vide-options="position: 0% 50%">
         <figcaption style="height: 780px;">
@@ -202,6 +149,5 @@
 
 </body>
 </html>
-
 
 

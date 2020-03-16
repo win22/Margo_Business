@@ -84,7 +84,7 @@
                                         <a href="{{ route('ab') }}">A propos</a>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="{{ route('cont') }}">Nous contacter</a>
+                                        <a href="{{ route('cont') }}">Contact</a>
                                     </li>
                                     <li class="menu-item-has-children">
                                         <a href="{{ route('log') }}">Se connecter</a>
@@ -115,7 +115,7 @@
                                     style=" text-shadow: 2px 0px 3px rgba(8,79,104,0.67)"
                                     ><span>Margo Business</span></h1>
                                     <div class="tg-description">
-                                        <h2 style=" font-family: 'Lora'; color: white ;text-shadow: 2px 0px 3px rgba(8,79,104,0.67)">creez une vie selon vos propres termes, car vous étes les leader des demains!</h2>
+                                        <h2 style=" font-family: 'Lora'; color: white ;text-shadow: 2px 0px 3px rgba(8,79,104,0.67)">creez une vie selon vos propres termes, car vous étes les leaders de demain!</h2>
                                     </div>
                                     <div class="tg-btns">
                                         <a class="tg-btn" href=""><span>Démarrer</span></a>
