@@ -11,6 +11,7 @@ const handleIntersect = function (entries, observer) {
         if(entry.intersectionRatio > ratio)
         {
             entry.target.classList.add('reveal-visible')
+
         }
     })
 };

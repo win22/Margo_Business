@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="{{ asset('site/css/color.css') }}">
     <link rel="stylesheet" href="{{ asset('site/css/responsive.css') }}">
     <script src="{{ asset('site/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body class="tg-home tg-hometwo" >
 <!--[if lt IE 8]>
@@ -105,7 +107,7 @@
                 Home Slider Start
         *************************************-->
         <div id="tg-homeslidervfour" class="tg-homeslider owl-carousel ">
-            <figure class="item" data-vide-bg="{{ asset('site/images/slider/dia.jpg') }}" >
+            <figure class="item" data-vide-bg="{{ asset('site/images/slider/dia.jpg') }}" data-vide-options="position: 50% 0%">
                 <figcaption>
                     <div class="container">
                         <div class="row reveal">
@@ -278,10 +280,14 @@
                         </div>
                     </div>
                     <div class="tg-themefeature">
-                        <span class="tg-themefeatureicon"><i class="icon-leaf"></i></span>
-                        <h3>Séminaire</h3>
+                        <span class="tg-themefeatureicon"><i class="icon-book"></i></span>
+                        <h3>Ebook</h3>
                         <div class="tg-description">
-                            <p>Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos consequat.</p>
+                            <p style="padding-bottom: 10px !important;">Nous avons mis à votre disposition ce EBook qui est completement gratuit pour tous ceux qui veulent
+                                se lancer dans le domaine de l'entreprenariat.<br/>
+                                Merci de renseigner vos information et de cliquer sur recevoir
+                            </p>
+                            <a data-target="#exampleModal1 "  data-toggle="modal" class="btn btn-warning btn-sm"><span><i class="fa fa-download"></i> Télécharger</span></a>
                         </div>
                     </div>
                 </div>
@@ -554,9 +560,104 @@
         *************************************-->
     </div>
 </div>
-<!--************************************
-        Wrapper End
-*************************************-->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document" style="border-color: darkred">
+        <div class="modal-content card-orange card-outline">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title" id="exampleModalLabel">Newsletter</h5>
+                <p>Ce modal est en construction...</p>
+
+            </div>
+            <div class="modal-body">
+                <form enctype="multipart/form-data" action="/save_admin" >
+                    @csrf
+                    <input  type="email" name="email" class="form-control"
+                           placeholder="votre adresse email">
+
+                    @if($errors->has('password'))
+                    <small id="emailHelp" class="form-text text-danger">{{$errors->first('password')}}</small>
+                    @endif
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-outline-orange btn-sm">Modifier</button>
+                    </div>
+                </form>
+
+
+            </div>
+
+        </div>
+    </div>
+</div >
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="exampleModalLabel1"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document" style="border-color: darkred">
+        <div class="modal-content card-orange card-outline">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 style="color: #e09900; font-weight: bold; font-family: 'lora'" class="modal-title" id="exampleModalLabel"> Ebook</h5>
+
+
+            <form action="/download_ebook" method="post">
+                @csrf
+                    <div class="form-group">
+                        <label style="font-family: 'Manjari Bold'; color: black">Nom</label>
+                        <input  type="text" name="name" class="form-control"
+                               placeholder="Saisir votre nom">
+                        @if($errors->has('name'))
+                        <small id="emailHelp" class="form-text text-danger">{{$errors->first('name')}}</small>
+                        @endif
+                    </div>
+                    <div class="form-group">
+                        <label style="font-family: 'Manjari Bold'; color: black">Email</label>
+                        <input  type="email" name="email" class="form-control"
+                               placeholder="votre adresse email">
+
+                        @if($errors->has('email'))
+                        <small id="emailHelp" class="form-text text-danger">{{$errors->first('password')}}</small>
+                        @endif
+                    </div>
+                    <div class="form-group">
+                        <label style="font-family: 'Manjari Bold'; color: black"> Téléphone </label>
+                        <input  type="text" name="phone" class="form-control"
+                               placeholder="votre adresse email">
+                        @if($errors->has('email'))
+                        <small id="emailHelp" class="form-text text-danger">{{$errors->first('email')}}</small>
+                        @endif
+                    </div>
+                    <div class="form-group">
+                        <label style="font-family: 'Manjari Bold'; color: black">Raison</label>
+                        <textarea name="message" placeholder="Quelle sont les raisons ">
+                        </textarea>
+                        @if($errors->has('message'))
+                        <small id="emailHelp" class="form-text text-danger">{{$errors->first('message')}}</small>
+                        @endif
+                    </div>
+                <div class="form-group row">
+                    <div class="col-md-6 offset-md-4">
+                        <div class="g-recaptcha" data-sitekey="{{ env('CAPTCHA_KEY') }}"></div>
+                        @if($errors->has('g-recaptcha-response'))
+                        <span>
+                <strong style="color: red">{{ $errors->first('g-recaptcha-response')}}</strong>
+               </span>
+                    </div>
+                </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-download"></i> Télécharger </button>
+                        </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+
 <script src="{{ asset('site/js/vendor/jquery-library.js') }}"></script>
 <script src="{{ asset('site/js/vendor/bootstrap.min.js') }}"></script>
 <script src="https://maps.google.com/maps/api/js?key=AIzaSyCR-KEWAVCn52mSdeVeTqZjtqbmVJyfSus&language=fr"></script>
@@ -594,6 +695,11 @@
         )
     });
 </script>
+<script>
+    setTimeout(function () {
+        $('#exampleModal').modal('show');
 
+    }, 6000)
+</script>
 </body>
 </html>

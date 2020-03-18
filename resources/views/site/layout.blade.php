@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{{ asset('site/css/color.css') }}">
     <link rel="stylesheet" href="{{ asset('site/css/responsive.css') }}">
     <script src="{{ asset('site/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body class="tg-home tg-hometwo" >
 <!--[if lt IE 8]>
