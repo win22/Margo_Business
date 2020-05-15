@@ -43,7 +43,7 @@
                                         <a href="{{ route('cont') }}">Contact</a>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="{{ route('log') }}">Se connecter</a>
+                                        <a href="#">Se connecter</a>
                                     </li>
                                 </ul>
                             </div>

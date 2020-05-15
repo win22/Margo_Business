@@ -91,7 +91,7 @@
                                         <a href="{{ route('cont') }}">Contact</a>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="{{ route('log') }}">Se connecter</a>
+                                        <a href="#">Se connecter</a>
                                     </li>
                                 </ul>
                             </div>
@@ -130,42 +130,21 @@
                     </div>
                 </figcaption>
             </figure>
-            <figure class="item" data-vide-bg="{{ asset('site/images/slider/sl2.jpg') }}"
-                    data-vide-options="position: 0% 50%">
+            <figure class="item" data-vide-bg="{{ asset('site/images/slider/dia.jpg') }}"
+                    data-vide-options="position: 50% 0%">
                 <figcaption>
                     <div class="container">
-                        <div class="row">
+                        <div class="row reveal">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 reveal-2">
-                                <div class="tg-slidercontent">
-                                    <h1>We’re Focused<span>on Digital Products</span></h1>
-                                    <div class="tg-description">
-                                        <p>A Totally New Way to Grow your Business We Bring you an Awesome of Design
-                                            Creative Skills,</p>
-                                    </div>
-                                    <div class="tg-btns">
-                                        <a class="tg-btn" href="javascript:void(0);(0);"><span>buy vation</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </figcaption>
-            </figure>
-            <figure class="item" data-vide-bg="{{ asset('site/images/slider/sl2.jpg') }}"
-                    data-vide-options="position: 0% 50%">
-                <figcaption>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 reveal-2">
-                                <div class="tg-slidercontent">
-                                    <h1>We’re Focused<span>on Digital Products</span></h1>
-                                    <div class="tg-description">
-                                        <p>A Totally New Way to Grow your Business We Bring you an Awesome of Design
-                                            Creative Skills,</p>
-                                    </div>
-                                    <div class="tg-btns">
-                                        <a class="tg-btn" href="javascript:void(0);(0);"><span>buy vation</span></a>
-                                    </div>
+                                <h1
+                                    style="text-shadow: 2px 0px 3px rgba(8,79,104,0.67)"
+                                >
+                                    <span
+                                        style="color: white; font-family: 'Lora'; background-image: linear-gradient(135deg,#e09900 45%,rgba(0,0,0,0) 30%) !important;"> Margo Business</span>
+                                </h1>
+                                <div class="tg-description">
+                                    <h1 style="padding-top: 15px ;font-size: 30px ; font-family: 'Lora'; color: white ;text-shadow: 2px 0px 3px rgba(8,79,104,0.67)">
+                                        creez une vie selon vos propres termes</h1>
                                 </div>
                             </div>
                         </div>
@@ -317,7 +296,14 @@
                                             Merci de renseigner vos information et de cliquer sur recevoir
                                         </p>
                                         <a data-target="#exampleModal1 " data-toggle="modal"
-                                           class="btn btn-warning btn-sm"><span><i class="fa fa-download"></i> Télécharger</span></a>
+                                           style="background-color: #e09900; color: white "
+                                           class="btn btn-sm"><span><i class="fa fa-download"></i> Télécharger</span></a> <br/>
+                                        @if (session('ebook'))
+                                        <span class="valid-feedback"> <span  style="color: #ffbe30">Margo-Business</span>
+                                            vous remercie pour votre téléchargement .<br/>
+                                            <i class="fa fa-check-circle"></i> {{ session('ebook') }}
+                                        </span>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -426,118 +412,49 @@
                     </div>
                     <div class="tg-blogpost tg-blogpostvtwo tg-blogpostvfive tg-bglight">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <article class="tg-post">
+                            @foreach($blogs as $blog)
+                                <article class="tg-post">
                                 <figure>
-                                    <span class="tg-postcategory">work</span>
-                                    <img style="height: 368px" src="{{ asset('site/images/blog/2.jpg') }}"
+                                    <span class="tg-postcategory">
+                                        @if($blog->type == 1)
+                                        Read
+                                        @else
+                                        Vidéo
+                                        @endif
+                                    </span>
+                                    <img style="height: 368px" src="{{ asset('storage/'.$blog->image) }}"
                                          alt="image description">
                                     <figcaption>
                                         <div class="tg-postcontent">
                                             <div class="tg-posttitle">
-                                                <h3><a href="javascript:void(0);">Inspired by Italian Style</a></h3>
+                                                <h3><a href="#">{{ $blog->name }}</a></h3>
                                             </div>
                                             <div class="tg-description">
-                                                <p>Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris
-                                                    repudiare, We travel Roswell sententiae.</p>
+                                                <p>{{ $blog->description }}</p>
                                             </div>
                                             <ul class="tg-postmetadata">
                                                 <li>
                                                     <span>By <a
-                                                            href="javascript:void(0);(0);">Ibrahima DIALLO</a></span>
+                                                            href="#">
+                                                            {{ $blog->user->name }}
+                                                        </a></span>
                                                 </li>
                                                 <li>
-                                                    <time datetime="2017-07-07">1 Mars 2020</time>
+                                                    <p hidden>   {{ \Carbon\Carbon::setLocale('fr') }}</p>
+                                                    <time datetime="2017-07-07">{{
+                                                        \Carbon\Carbon::parse($blog['created_at'])->diffForHumans()
+                                                        }}</time>
                                                 </li>
                                             </ul>
                                         </div>
                                     </figcaption>
-                                </figure>
-                            </article>
-                            <article class="tg-post">
-                                <figure>
-                                    <span class="tg-postcategory">Videos</span>
-                                    <img style="height: 368px" src="{{ asset('site/images/blog/2.jpeg') }}"
-                                         alt="image description">
-                                    <figcaption>
-                                        <div class="tg-postcontent">
-                                            <div class="tg-posttitle">
-                                                <h3><a href="javascript:void(0);">Inspired by Italian Style</a></h3>
-                                            </div>
-                                            <div class="tg-description">
-                                                <p>Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris
-                                                    repudiare, We travel Roswell sententiae.</p>
-                                            </div>
-                                            <ul class="tg-postmetadata">
-                                                <li>
-                                                    <span>By <a
-                                                            href="javascript:void(0);(0);">Ibrahima DIALLO</a></span>
-                                                </li>
-                                                <li>
-                                                    <time datetime="2017-07-07">2 Mars 2020</time>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </figcaption>
-                                    <a class="tg-btnplay" href="https://www.youtube.com/watch?v=A5B5uGEancU"
+                                    @if($blog->type == 1)
+                                    <a class="tg-btnplay" href="{{ URL::to($blog->link) }}"
                                        data-rel="prettyPhoto[video]"><i class="icon-play3"></i></a>
+                                    @endif
                                 </figure>
                             </article>
-                            <article class="tg-post">
-                                <figure>
-                                    <span class="tg-postcategory">work</span>
-                                    <img style="height: 368px" src="{{ asset('site/images/blog/4.jpg') }}"
-                                         alt="image description">
-                                    <figcaption>
-                                        <div class="tg-postcontent">
-                                            <div class="tg-posttitle">
-                                                <h3><a href="javascript:void(0);">Inspired by Italian Style</a></h3>
-                                            </div>
-                                            <div class="tg-description">
-                                                <p>Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris
-                                                    repudiare, We travel Roswell sententiae.</p>
-                                            </div>
-                                            <ul class="tg-postmetadata">
-                                                <li>
-                                                    <span>By <a
-                                                            href="javascript:void(0);(0);">Ibrahima DIALLO</a></span>
-                                                </li>
-                                                <li>
-                                                    <time datetime="2017-07-07">4 Mars 2020</time>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                            <article class="tg-post">
-                                <figure>
-                                    <span class="tg-postcategory">Videos</span>
-                                    <img style="height: 368px" src="{{ asset('site/images/blog/1.jpeg') }}"
-                                         alt="image description">
-                                    <figcaption>
-                                        <div class="tg-postcontent">
-                                            <div class="tg-posttitle">
-                                                <h3><a href="javascript:void(0);">Inspired by Italian Style</a></h3>
-                                            </div>
-                                            <div class="tg-description">
-                                                <p>Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris
-                                                    repudiare, We travel Roswell sententiae.</p>
-                                            </div>
-                                            <ul class="tg-postmetadata">
-                                                <li>
-                                                    <span>By <a
-                                                            href="javascript:void(0);(0);">Ibrahima DIALLO</a></span>
-                                                </li>
-                                                <li>
-                                                    <time datetime="2017-07-07">8 Mars 2020</time>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </figcaption>
-                                    <a class="tg-btnplay" href="https://www.youtube.com/watch?v=A5B5uGEancU"
-                                       data-rel="prettyPhoto[video]"><i class="icon-play3"></i></a>
-                                </figure>
-                            </article>
+                            @endforeach
                         </div>
 
                     </div>
@@ -639,43 +556,43 @@
     </div>
 </div>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog" role="document" style="border-color: darkred">
-        <div class="modal-content card-orange card-outline">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h5 class="modal-title" id="exampleModalLabel">Newsletter</h5>
-                <p>Ce modal est en construction...</p>
-
-            </div>
-            <div class="modal-body">
-                <form enctype="multipart/form-data" action="/save_admin">
-                    @csrf
-                    <input type="email" name="email" class="form-control"
-                           placeholder="votre adresse email">
-
-                    @if($errors->has('password'))
-                    <small id="emailHelp" class="form-text text-danger">{{$errors->first('password')}}</small>
-                    @endif
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-outline-orange btn-sm">Modifier</button>
-                    </div>
-                </form>
-
-
-            </div>
-
-        </div>
-    </div>
-</div>
+<!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"-->
+<!--     aria-hidden="true">-->
+<!--    <div class="modal-dialog" role="document" style="border-color: darkred">-->
+<!--        <div class="modal-content card-orange card-outline">-->
+<!--            <div class="modal-header">-->
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                    <span aria-hidden="true">&times;</span>-->
+<!--                </button>-->
+<!--                <h5 class="modal-title" id="exampleModalLabel">Newsletter</h5>-->
+<!--                <p>Ce modal est en construction...</p>-->
+<!---->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                <form enctype="multipart/form-data" action="/save_admin">-->
+<!--                    @csrf-->
+<!--                    <input type="email" name="email" class="form-control"-->
+<!--                           placeholder="votre adresse email">-->
+<!---->
+<!--                    @if($errors->has('password'))-->
+<!--                    <small id="emailHelp" class="form-text text-danger">{{$errors->first('password')}}</small>-->
+<!--                    @endif-->
+<!--                    <div class="modal-footer">-->
+<!--                        <button type="submit" class="btn btn-outline-orange btn-sm">Modifier</button>-->
+<!--                    </div>-->
+<!--                </form>-->
+<!---->
+<!---->
+<!--            </div>-->
+<!---->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-hidden="true"
      aria-labelledby="exampleModalLabel1"
      aria-hidden="true">
-    <div class="modal-dialog" role="document" style="border-color: darkred">
+    <div class="modal-dialog" role="document" style="border-color: darkred ">
         <div class="modal-content card-orange card-outline">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">

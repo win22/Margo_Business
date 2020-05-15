@@ -36,7 +36,7 @@ class InfoController extends Controller
             $message->subject('Lien de téléchargement du Ebook de Margo Business');
         });
 
-        return dump("c'est passé");
-
+        session()->flash('ebook', 'Un mail a été envoyé à ' .request('email'));
+        return back();
     }
 }
